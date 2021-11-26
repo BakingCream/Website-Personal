@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gallery | Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=Pictures/.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="krysicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"> Menu</i>
+      </label>
+      <label class="logo">KRYS</label>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="aboutme.html">Who am I?</a></li>
+        <li><a class="active" href="#">others</a>
+           <ul>
+             <li><a class="active" href="gallerymain.html">Gallery</a></li>
+             <li><a href="experiences.html">Experiences</a></li>
+           </ul>
+        </li>
+        <li><a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    
+     <script>
+        let navbar = document.querySelector('nav');
+        var scrollPrev = window.pageYOffset;
+        window.onscroll = function(){
+          var scrollCur = window.pageYOffset;
+          if(scrollPrev > scrollCur){
+            navbar.style.top = "0";
+          }else{
+            navbar.style.top = "-70px";
+          }
+          scrollPrev = scrollCur;
+        }
+     </script>
+        <!--PhotoGallery-->
+    <div class="container">
+      <div class="heading">
+        <h3 id="photo">Photo <span>Gallery</span></h3>
+      </div>
+      <div class="box">
+        
+        <div class="dream">
+          <img src="Pictures/1.jpg">
+           <img src="Pictures/2.jpg">
+            <img src="Pictures/3.jpg">
+             <img src="Pictures/4.jpg">
+              <img src="Pictures/5.jpg">
+              
+        </div>
+  
+          <div class="dream">
+          <img src="Pictures/6.jpg">
+           <img src="Pictures/7.jpg">
+            <img src="Pictures/8.jpg">
+             <img src="Pictures/9.jpg">
+              <img src="Pictures/10.jpg">
+              
+        </div>
+  
+          <div class="dream">
+          <img src="Pictures/11.jpg">
+           <img src="Pictures/12.jpg">
+            <img src="Pictures/13.jpg">
+             <img src="Pictures/14.jpg">
+              <img src="Pictures/15.jpg">
+              
+        </div>
+      </div>
+      <div class="btn">
+        <a href="#">Go back to the top</a>
+      </div>
+  
+    </div>
+  </body>
+</html>

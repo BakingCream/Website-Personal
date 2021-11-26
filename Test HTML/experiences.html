@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Experiences | Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="krysicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/><!--source for icons-->
+  </head>
+  <body>
+    <!--navigation bar-->
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"> Menu</i>
+      </label>
+      <label class="logo">KRYS</label>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="aboutme.html">Who am I?</a></li>
+        <li><a class="active" href="#">others</a>
+           <ul>
+             <li><a href="gallerymain.html">Gallery</a></li>
+             <li><a class="active" href="experiences.html">Experiences</a></li>
+           </ul>
+        </li>
+        <li><a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!--hide navigation bar animation-->
+     <script>
+        let navbar = document.querySelector('nav');
+        var scrollPrev = window.pageYOffset;
+        window.onscroll = function(){
+          var scrollCur = window.pageYOffset;
+          if(scrollPrev > scrollCur){
+            navbar.style.top = "0";
+          }else{
+            navbar.style.top = "-70px";
+          }
+          scrollPrev = scrollCur;
+        }
+
+     </script>
+    <!--content-->
+    <div class="skillcontainer">
+      <div class="skill-bars">
+        <div class="bar">
+          <div class="info">
+            <span>HTML</span>
+          </div>
+          <div class="progress-line html">
+            <span></span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <span>CSS</span>
+          </div>
+          <div class="progress-line css">
+            <span></span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <span>C++</span>
+          </div>
+          <div class="progress-line jquery">
+            <span></span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <span>Python</span>
+          </div>
+          <div class="progress-line python">
+            <span></span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <span>Java</span>
+          </div>
+          <div class="progress-line mysql">
+            <span></span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gallery | Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="krysicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/><!--source for icons-->
+  </head>
+  <body>
+    <!--navigation bar-->
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"> Menu</i>
+      </label>
+      <label class="logo">KRYS</label>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="aboutme.html">Who am I?</a></li>
+        <li><a class="active" href="#">others</a>
+           <ul>
+             <li><a class="active" href="gallerymain.html">Gallery</a></li>
+             <li><a href="experiences.html">Experiences</a></li>
+           </ul>
+        </li>
+        <li><a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!--hide navigation bar animation-->
+     <script>
+        let navbar = document.querySelector('nav');
+        var scrollPrev = window.pageYOffset;
+        window.onscroll = function(){
+          var scrollCur = window.pageYOffset;
+          if(scrollPrev > scrollCur){
+            navbar.style.top = "0";
+          }else{
+            navbar.style.top = "-70px";
+          }
+          scrollPrev = scrollCur;
+        }
+
+     </script>
+    <!--content-->
+    <div class="vidcontainer">
+      <div class="video-container">
+        <div class="headline">
+          <h3 >Video <span>Gallery</span></h3>
+        </div>
+        <div class="vidbox">
+         <div class="video"><iframe width="415" height="315" src="https://www.youtube.com/embed/iDHbbgp32s4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+         <div class="video"><iframe width="415" height="315" src="https://www.youtube.com/embed/kjRfzZnNYws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+         <div class="video"><iframe width="415" height="315" src="https://www.youtube.com/embed/eXfy9pfl-hc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+         <div class="video"><iframe width="415" height="315" src="https://www.youtube.com/embed/DQH8cRdZ1HU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+         <div class="video"><iframe width="415" height="315" src="https://www.youtube.com/embed/ye4OWT8or44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+         <div class="video"><iframe width="415" height="315" src="https://www.youtube.com/embed/jdnvv3HP9kM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+      </div>
+  </body>
+</html>

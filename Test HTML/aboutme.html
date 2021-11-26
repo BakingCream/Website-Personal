@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About me | Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="krysicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/><!--source for icons-->
+  </head>
+  <body>
+    <!--navigation bar-->
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"> Menu</i>
+      </label>
+      <label class="logo">KRYS</label>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a class="active" href="#">Who am I?</a></li>
+        <li><a href="#">others</a>
+           <ul>
+             <li><a href="gallerymain.html">Gallery</a></li>
+             <li><a href="experiences.html">Experiences</a></li>
+           </ul>
+        </li>
+        <li><a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!--hide navigation bar animation-->
+     <script>
+        let navbar = document.querySelector('nav');
+        var scrollPrev = window.pageYOffset;
+        window.onscroll = function(){
+          var scrollCur = window.pageYOffset;
+          if(scrollPrev > scrollCur){
+            navbar.style.top = "0";
+          }else{
+            navbar.style.top = "-70px";
+          }
+          scrollPrev = scrollCur;
+        }
+
+     </script>
+    <!--content-->
+    <div class="Intro">
+        <div class="introcontainer"><h1>Who am I really?</h1></div>
+    <div class="explore">
+        <a href="#aboutme"><button class="btn explore-btn">Get to know me</button></a>
+    </div>
+    </div>
+    <div class="aboutcontainer" >
+      <div class="logoicon" id="aboutme"><img src="me.jpeg" class="me-img"></div>
+        <h1>Hello I'm Justein Khryss J. Garcia</h1>
+        <span>
+          IT Student
+        </span>
+        <h2>General Info </h2>
+       <div class="aboutcontentbox">
+        <div class="aboutme1">
+          <p>Birth Date: March 14, 2001 </p>
+          <p>Address: Celina Homes 5 Brgy. Tagapo Sta. Rosa, Laguna</p>
+          <p>Email: jilljavierkhryss@gmail.com</p>
+        </div>
+        <div class="aboutme2">
+          <p>Civil Status: Single</p>
+          <p>Current School: Polytechnic University of the Philippines - Sta. Rosa Branch </p>
+        </div>
+       </div>
+       <!--Main Content-->
+       <h2>Hobbies </h2>
+       <span></span>
+       <p>I have plenty of hobbies that I do. This includes listening to music and singing, editing videos, playing games, playing basketball, and making digital arts.
+         All of this is sort of a leisure time whenever I don't have anything to do. I'll tackle them one by one for you.
+       </p>
+       <h2>Art</h2>
+       <p>Ever since I was a child I like to draw especially anime. Then I learned about digital art, and since then I continued to make digital art as an hobby.
+         It makes me feel like whenever I make digital art, it's like an escape from reality because
+         I get to make an art that is unique and just out of this world. There is so much freedom whenever
+         I make art and that is really what I want. I have samples of my art on Picture Gallery tab.
+       </p>
+       <h2>Music</h2>
+       <p>Like drawing, I liked listening to music when I was at the very young age. I like pop, opm, jazz, rnb type of musics.
+         Before that's all I do, just listening, didn't really have interest in singing until I was in highschool.
+         I constantly just listen to every band I like and keep practicing to sing that song. My mom knows how to sing and she taught me some 
+         techniques on how to sing. I'm not that good at singing but I just love to sing because it was fun. I also have samples on Video Gallery tab.
+       </p>
+       <h2>Editing</h2>
+       <p>This one I learned from watching videos on YouTube only. I just thought that editing videos is like making digital art.
+         Of course you don't just wanna make plain videos, so, I also decided to try on editing videos. At first, it was so hard but 
+         then as I continue editing different videos I kinda know the easiest and fastest way though some really takes patience but 
+         it wasn't as hard as the first time. I continued to learn from watching tutorials on YouTube and it became of a hobby. I only 
+         edit videos I make when playing games, or my recordings of a song  I made, or a cover. Maybe soon I could accept some commissions
+         but as of now I'm not yet satisfied with my skills. Check out my samples on Video Gallery tab.
+       </p>
+       <h2>Games</h2>
+       <p>I think most of us really like playing games. I am one of that group and I really enjoy playing games. Whenever I have time, I always 
+         play videogames. Ever since I got introduces to it when I was little, I got fascinated on how games works. It was also the reason why I took 
+         the course BSIT, I wanted to learn how to make a game. Below are my favorite games so far:
+       </p>
+       <div class="gamecontainer">
+        <img src="Pictures/hzd.jpg" class="game1-img">
+        <img src="Pictures/valorant.jpg" class="game2-img">
+        <img src="Pictures/nba2k21.jpg" class="game3-img">
+       </div>
+       <h2>Sports</h2>
+       <p>Playing basketball is also one of my hobbies. Just like playing videogames, I am also hooked on this sport. The big influenced for me is the NBA.
+         It really taught me how to play basketball. Also watching Kobe Bryant how to play is really amazing. The pure skills
+         is amazing. And his mentality is the best thing about him, working to be the best of all. I am a member in basketball team on my course and I am 
+         currently a Shooting Guard position.
+       </p>
+
+       <div class="btn">
+        <a href="#">Go back to the top</a>
+      </div>
+    </div>
+  </body>
+</html>
